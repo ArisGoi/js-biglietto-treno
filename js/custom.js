@@ -22,8 +22,7 @@ function calcoloPrezzo() {
     }
 
     var finalPrice = ticketPrice - sconto;
-    finalPrice = (Math.round(finalPrice * 100) / 100).toFixed(2);
-
+    
     // output = Prezzo finale del biglietto
-    alert('Il prezzo del biglietto è: ' + finalPrice + ' €');
+    alert('Il prezzo del biglietto è: ' + finalPrice.toFixed(2) + ' €');
 }
